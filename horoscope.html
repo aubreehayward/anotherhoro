@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Include the stylesheet -->
-    <link rel="stylesheet" href="./styles.css">
-    <title>jQuery Project</title>
-  </head>
-  <body>
-    <header>
-      <h1>My jQuery Project</h1>
-    </header>
-    <main>
-      <form>
-        <input type="text" name="search-term" />
-        <button type="submit">Search</button>
-      </form>
-    </main>
-    <footer>
-      <!-- Add footer content -->
-    </footer>
-  </body>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="horoscope.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Lobster" rel="stylesheet">
+  <title>The Stars Say</title>
+</head>
+
+<body>
+  <header>
+    <h1><b>Not</b> <em>Just</em> Another Horoscope Webpage</h1>
+  </header>
+
+  <section class="find-your-sign">
+    <form id="select-your-birthday">
+      <input type="date" id="birthday">
+      <button type="submit" id="submit-button">Tell Me!</button>
+    </form>
+  </section>
+
+  <main class="horoscope-options">
+    <div class="first-four">
+      <div class="aquarius-box">Aquarius</div>
+      <div class="pisces-box">Pisces</div>
+      <div class="aries-box">Aries</div>
+      <div class="taurus-box">Taurus</div>
+    </div>
+    <div class="middle-four">
+      <div class="gemini-box">Gemini</div>
+      <div class="cancer-box">Cancer</div>
+      <div class="leo-box">Leo</div>
+      <div class="virgo-box">Virgo</div>
+    </div>
+    <div class="last-four">
+      <div class="libra-box">Libra</div>
+      <div class="scorpio-box">Scorpio</div>
+      <div class="sagittarius-box">Sagittarius</div>
+      <div class="capricorn-box">Capricorn</div>
+    </div>
+  </main>
+
+  <section class="your-daily-horoscope">
+    <h2>Here's what the stars have to say...</h2>
+    <div class="horoscope-of-the-day">
+      <p id="actual-horoscope">This is where your horoscope will be, when it's not hidden.</p>
+    </div>
+  </section>
+
+  <footer class="mercury-retrograde">
+    <h3>Should you go outside today?</h3>
+    <p id="is-it-retrograde">Depends if Mercury is in Retrograde or not.</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="horoscope.js" type="text/javascript"></script>
+
+
+</body>
 </html>
