@@ -40,18 +40,28 @@ $('h1').on('click', function() {
   });
 
 $('button').on('click', function() {
-  $(this).css('padding', '5px');
+  $(this).css('padding', '8px');
 });
 
 $('form').on('submit', function() {
-  $('.your-daily-horoscope').addClass('active');
+  $('.your-daily-horoscope', '#submit-again-button').addClass('active');
   $('.horoscope-options').fadeOut(1000);
-  $('.your-daily-horoscope').show(4000);
+  $('#submit-button').fadeOut(500);
+  $('#submit-again-button').delay(500).fadeIn(600);
+  $('.your-daily-horoscope').show(3000);
 })
 
-$('.search-results').on('click', function () {
+$('.search-results').on('click', function() {
   $(this).fadeOut(1000);
   $('form').show(2000);
+});
+
+$('#submit-again-button').on('click', function() {
+  $('#actual-horoscope').replaceWith();
+});
+
+$('#home-button').on('click', function() {
+  location.reload();
 });
 
 console.log("Is this thing on?");
