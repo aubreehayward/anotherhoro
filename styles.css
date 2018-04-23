@@ -1,5 +1,81 @@
-/*
 
-  ADD YOUR STYLES HERE
+.your-daily-horoscope {
+  display: none;
+}
 
-*/
+.active {
+  display: block;
+}
+
+body {
+  font-family: Lobster;
+  background-color: #F9F1E5;
+  color: #688082;
+  text-align: center;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+em,
+h3 {
+  color: #997034;
+  font-style: normal;
+};
+
+b {
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+#birthday,
+#submit-button,
+.horoscope-options,
+#actual-horoscope,
+#fun-fact,
+#is-it-retrograde {
+  font-family: Josefin Slab;
+  color: #2D4751;
+}
+
+.horoscope-options {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.aquarius-box,
+.pisces-box,
+.aries-box,
+.taurus-box,
+.gemini-box,
+.cancer-box,
+.leo-box,
+.virgo-box,
+.libra-box,
+.scorpio-box,
+.sagittarius-box,
+.capricorn-box
+ {
+  display: flex;
+  box-sizing: border-box;
+  width: 125px;
+  height: 125px;
+  margin: 15px;
+  background-color: #F9C7C2;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
+  text-shadow: 2px 2px #F9F1E5;
+}
+
+.first-four,
+.middle-four,
+.last-four {
+  display: flex;
+  justify-content: center;
+}
