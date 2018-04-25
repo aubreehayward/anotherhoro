@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+  $('form').on('click', function() {
+$.get('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita', function(data) {
+  console.log(data);
+})});
+
+
+
 var horoscopeDataTrial = {
     "horoscope": "Be receptive to advice from the savvy sisterhood.",
     "date": "Thursday, February 1, 2018",
@@ -265,7 +272,7 @@ var horoscopeDataTrial = {
       ],
       "horoscope": "$getrequest coming later"
     },
-  "virgo": {
+    "virgo": {
       "sign": "Aquarius",
       "date": [
         "08-23",
@@ -473,8 +480,6 @@ var horoscopeDataTrial = {
 //   })
 
 
-
-
   function displaySignTitle(responseObject) {
     var sign = responseObject.sign;
     var title = $("<article>" + sign + "</article>");
@@ -497,6 +502,102 @@ var horoscopeDataTrial = {
     displaySignTitle(horoscopeDataTrial);
     displaySignHoroscope(horoscopeDataTrial);
   });
+
+$('#aquarius').on('click', function(event) {
+  event.preventDefault();
+  var responseObject = horoscopeData.aquarius;
+
+  displaySignTitle(responseObject);
+  displaySignHoroscope(responseObject);
+});
+
+$('#pisces').on('click', function() {
+
+  var responseObject = horoscopeData.pisces;
+
+  displaySignTitle(responseObject);
+  displaySignHoroscope(responseObject);
+});
+
+$('#aries').on('click', function() {
+
+  var responseObject = horoscopeData.aries;
+
+  displaySignTitle(responseObject);
+  displaySignHoroscope(responseObject);
+});
+
+$('#taurus').on('click', function() {
+
+  var responseObject = horoscopeData.taurus;
+
+  displaySignTitle(responseObject);
+  displaySignHoroscope(responseObject);
+});
+
+$('#gemini').on('click', function() {
+
+  var responseObject = horoscopeData.gemini;
+
+  displaySignTitle(responseObject);
+  displaySignHoroscope(responseObject);
+});
+
+$('#cancer').on('click', function() {
+
+  var responseObject = horoscopeData.cancer;
+
+  displaySignTitle(responseObject);
+  displaySignHoroscope(responseObject);
+});
+
+$('#leo').on('click', function() {
+
+  var responseObject = horoscopeData.leo;
+
+  displaySignTitle(responseObject);
+  displaySignHoroscope(responseObject);
+});
+
+$('#virgo').on('click', function() {
+
+  var responseObject = horoscopeData.virgo;
+
+  displaySignTitle(responseObject);
+  displaySignHoroscope(responseObject);
+});
+
+$('#libra').on('click', function() {
+
+  var responseObject = horoscopeData.libra;
+
+  displaySignTitle(responseObject);
+  displaySignHoroscope(responseObject);
+});
+
+$('#scorpio').on('click', function() {
+
+  var responseObject = horoscopeData.scorpio;
+
+  displaySignTitle(responseObject);
+  displaySignHoroscope(responseObject);
+});
+
+$('#sagittarius').on('click', function() {
+
+  var responseObject = horoscopeData.sagittarius;
+
+  displaySignTitle(responseObject);
+  displaySignHoroscope(responseObject);
+});
+
+$('#capricorn').on('click', function() {
+
+  var responseObject = horoscopeData.capricorn;
+
+  displaySignTitle(responseObject);
+  displaySignHoroscope(responseObject);
+});
 
 $('form').on('submit', function(event) {
   event.preventDefault();
@@ -526,16 +627,24 @@ $('form').on('submit', function() {
   $('#submit-button').fadeOut(500);
   $('#submit-again-button').delay(500).fadeIn(600);
   $('.your-daily-horoscope').show(3000);
-})
+});
+
+$('.box').on('click', function() {
+  $('.your-daily-horoscope', '#submit-again-button').addClass('active');
+  $('.horoscope-options').fadeOut(1000);
+  $('#submit-button').fadeOut(500);
+  $('#submit-again-button').delay(500).fadeIn(600);
+  $('.your-daily-horoscope').show(3000);
+});
 
 $('.search-results').on('click', function() {
   $(this).fadeOut(1000);
   $('form').show(2000);
 });
 
-$('#submit-again-button').on('click', function() {
-  $('#actual-horoscope').replaceWith();
-});
+// $('#submit-again-button').on('click', function() {
+//   $('#actual-horoscope').replaceWith();
+// });
 
 $('#home-button').on('click', function() {
   location.reload();
@@ -543,6 +652,6 @@ $('#home-button').on('click', function() {
 
 console.log("Is this thing on?");
 
-
 });
+
 
