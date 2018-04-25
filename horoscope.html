@@ -14,7 +14,7 @@
 
   <section class="find-your-sign">
     <form id="select-your-birthday">
-      <input type="text" placeholder="mm-dd-yyyy"/>
+      <input type="text" placeholder="mm-dd"/>
       <button type="submit" id="submit-button">Tell Me!</button>
       <button type="submit" id="submit-again-button">Try Another!</button>
     </form>
@@ -22,35 +22,35 @@
 
   <main class="horoscope-options">
     <div class="first-four">
-      <div class="aquarius-box">Aquarius</div>
-      <div class="pisces-box">Pisces</div>
-      <div class="aries-box">Aries</div>
-      <div class="taurus-box">Taurus</div>
+      <div class="aquarius" id="box">Aquarius</div>
+      <div class="pisces" id="box">Pisces</div>
+      <div class="aries" id="box">Aries</div>
+      <div class="taurus" id="box">Taurus</div>
     </div>
     <div class="middle-four">
-      <div class="gemini-box">Gemini</div>
-      <div class="cancer-box">Cancer</div>
-      <div class="leo-box">Leo</div>
-      <div class="virgo-box">Virgo</div>
+      <div class="gemini" id="box">Gemini</div>
+      <div class="cancer" id="box">Cancer</div>
+      <div class="leo" id="box">Leo</div>
+      <div class="virgo" id="box">Virgo</div>
     </div>
     <div class="last-four">
-      <div class="libra-box">Libra</div>
-      <div class="scorpio-box">Scorpio</div>
-      <div class="sagittarius-box">Sagittarius</div>
-      <div class="capricorn-box">Capricorn</div>
+      <div class="libra" id="box">Libra</div>
+      <div class="scorpio" id="box">Scorpio</div>
+      <div class="sagittarius" id="box">Sagittarius</div>
+      <div class="capricorn" id="box">Capricorn</div>
     </div>
   </main>
 
   <section class="your-daily-horoscope">
     <h2>Here's what the stars have to say...</h2>
     <div class="horoscope-of-the-day">
-      <p id="actual-horoscope">This is where your horoscope will be, when it's not hidden.</p>
+      <p id="actual-horoscope"></p>
     </div>
   </section>
 
   <footer class="mercury-retrograde">
     <h3>Should you go outside today?</h3>
-    <p id="is-it-retrograde">Depends if Mercury is in Retrograde or not.</p>
+    <p>Depends if Mercury is in Retrograde or not.</p>
     <button id="home-button">Take Me Home!</button>
   </footer>
 
