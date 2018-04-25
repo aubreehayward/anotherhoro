@@ -37,6 +37,7 @@ h2 {
   font-size: 48px;
 }
 
+label,
 #birthday,
 #submit-button,
 #submit-again-button,
@@ -66,7 +67,7 @@ article {
   font-size: 36px;
 }
 
-#box {
+.box {
   display: flex;
   box-sizing: border-box;
   width: 125px;
@@ -79,57 +80,57 @@ article {
   text-shadow: 2px 2px #F9F1E5;
 }
 
-#box:hover {
+.box:hover {
   background-size: contain;
   color: #F9C7C2;
   text-shadow: 1px 1px #2D4751;
 }
 
-.aquarius:hover {
+#aquarius:hover {
   background-image: url("https://cdn-s3.touchofmodern.com/products/000/417/198/4b77991bc023230579a9303a63c8e157_medium.jpg?1460161463");
 }
 
-.pisces:hover {
+#pisces:hover {
   background-image: url("https://cdn-s3.touchofmodern.com/products/000/417/184/0288e90e5985ddd1f01ceb6bd8761a24_medium.jpg?1460161403");
 }
 
-.aries:hover {
+#aries:hover {
   background-image: url("https://cdn-s3.touchofmodern.com/products/000/417/195/ddd405e9ca984c1748497d27d1117ec9_medium.jpg?1460161448");
 }
 
-.taurus:hover {
+#taurus:hover {
   background-image: url("https://cdn-s3.touchofmodern.com/products/000/417/177/05076c5da8e4e2b2620c1cf9e8151b89_medium.jpg?1460161373");
 }
 
-.gemini:hover {
+#gemini:hover {
   background-image: url("https://cdn-s3.touchofmodern.com/products/000/417/189/9dd95bb4e3c0f05e72d1cd079aaedb2d_medium.jpg?1460161423");
 }
 
-.cancer:hover {
+#cancer:hover {
   background-image: url("https://cdn-s3.touchofmodern.com/products/000/417/194/6d2d016b4b0c846cdc3cf0a041134917_medium.jpg?1460161447");
 }
 
-.leo:hover {
+#leo:hover {
   background-image: url("https://cdn-s3.touchofmodern.com/products/000/417/187/c12df731a71e0c9e36850c000fbc0224_medium.jpg?1460161414");
 }
 
-.virgo:hover {
+#virgo:hover {
   background-image: url("https://cdn-s3.touchofmodern.com/products/000/417/175/691fb13dc317ea2bd162566f754e094d_medium.jpg?1460161366");
 }
 
-.libra:hover {
+#libra:hover {
   background-image: url("https://cdn-s3.touchofmodern.com/products/000/417/186/46a97e89af07ccb8cc3fea09a4ee6277_medium.jpg?1460161412");
 }
 
-.scorpio:hover {
+#scorpio:hover {
   background-image: url("https://cdn-s3.touchofmodern.com/products/000/417/178/600a64d4fbe12bb8b7140e31753f4b36_medium.jpg?1460161375");
 }
 
-.sagittarius:hover {
+#sagittarius:hover {
   background-image: url("https://cdn-s3.touchofmodern.com/products/000/417/183/7b5fac3a92cafb12f41df496af0a7f71_medium.jpg?1460161395");
 }
 
-.capricorn:hover {
+#capricorn:hover {
   background-image: url("https://cdn-s3.touchofmodern.com/products/000/417/191/d4aa5c6238712cf153ab0fead50a07f3_medium.jpg?1460161432");
 }
 
